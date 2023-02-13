@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TextProcessing-App/static/css/main.198f9aa8.css",
+    "main.js": "/TextProcessing-App/static/js/main.cf166d28.js",
+    "static/js/787.5e676c17.chunk.js": "/TextProcessing-App/static/js/787.5e676c17.chunk.js",
+    "index.html": "/TextProcessing-App/index.html",
+    "main.198f9aa8.css.map": "/TextProcessing-App/static/css/main.198f9aa8.css.map",
+    "main.cf166d28.js.map": "/TextProcessing-App/static/js/main.cf166d28.js.map",
+    "787.5e676c17.chunk.js.map": "/TextProcessing-App/static/js/787.5e676c17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.198f9aa8.css",
+    "static/js/main.cf166d28.js"
+  ]
+}
