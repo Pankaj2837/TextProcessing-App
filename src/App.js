@@ -45,7 +45,7 @@ function App() {
     <div className="container my-3">
     <Switch>
     {/* /users --> Component 1
-        /users/home --> Component 2 */}
+  /users/home --> Component 2 */}
           <Route exact path="/about">
             <About mode={mode} />
           </Route>
