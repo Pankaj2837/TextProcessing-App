@@ -23,7 +23,7 @@ export default function About(props) {
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body" style={myStyle}>
-                    Textutils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or 
+                    Text Processing App gives you a way to analyze your text quickly and efficiently. Be it word count, character count or convert word to upper and lowercase. Rather than this it will also provide way to remove extra spaces and increase and decrease size of text
 
                     </div>
                     </div>
@@ -36,7 +36,7 @@ export default function About(props) {
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div className="accordion-body" style={myStyle}>
-                    TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word/ character limit.
+                    TextProcessor is a free character counter tool that provides instant character count & word count statistics for a given text. TextProcessor reports the number of words and characters.It will also convert the character into upper and lower case as per required. It will facilitate us to increase and decrease size of text. Thus it is suitable for writing text with word/character limit.
                     </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function About(props) {
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div className="accordion-body" style={myStyle}>
-                    This word counter software works in any web browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera. It suits to count characters in facebook, blog, books, excel document, pdf document, essays, etc.
+                    This TextProcessor is for works in any web browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera. It suits to count characters in facebook, blog, books, excel document, pdf document, essays, etc.
 
                     </div>
                     </div>
