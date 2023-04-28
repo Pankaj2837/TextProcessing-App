@@ -59,22 +59,22 @@ export default function TextForm(props) {
     // setText("new text"); // Correct way to change the state
     return (
         <>
-            <div className="container" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
-                <h1 className='mb-4'>{props.heading}</h1>
+            <div className="container" style={{ color: props.mode === 'dark' ? '#2bdfd7' : 'rgb(45 207 34)' }}>
+                <h3 className='mb-4'>{props.heading}</h3>
                 <div className="mb-3">
-                    <textarea className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? '#13466e' : 'white', color: props.mode === 'dark' ? 'white' : '#042743', fontSize: `${size}px`, height: '200px' }} id="myBox" rows="8" disabled={view}></textarea>
+                    <textarea className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? (view ===false ? '#13466e':'#727272') : (view ===false ? 'white':'rgb(220 228 235)'), color: props.mode === 'dark' ? 'white' : '#042743', fontSize: `${size}px`, height: '200px' }} id="myBox" rows="8" disabled={view}></textarea>
                 </div>
-                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>UpperCase</button>
+                <button disabled={text.length === 0} className="btn btn-success mx-1 my-1" onClick={handleUpClick}>UpperCase</button>
                 <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>LowerCase</button>
-                <button disabled={text.length === 0 || view === true} className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>ClearText</button>
-                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleCopy}>CopyText</button>
+                <button disabled={text.length === 0 || view === true} className="btn btn-danger mx-1 my-1" onClick={handleClearClick}>ClearText</button>
+                <button disabled={text.length === 0} className="btn btn-success mx-1 my-1" onClick={handleCopy}>CopyText</button>
                 <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleExtraSpaces}>RemoveExtraSpaces</button>
-                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleIncressFontSize}>IncreaseSize</button>
-                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleDecressFontSize}>DecreseSize</button>
-                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleViewOnly}>ViewOnly</button>
-                <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={handleDisableViewOnly}>Disable ViewOnly</button>
+                <button disabled={text.length === 0} className="btn btn-info mx-1 my-1" onClick={handleIncressFontSize}>IncreaseSize</button>
+                <button disabled={text.length === 0} className="btn btn-warning mx-1 my-1" onClick={handleViewOnly}>ViewOnly</button>
+                <button disabled={text.length === 0} className="btn btn-info mx-1 my-1" onClick={handleDecressFontSize}>DecreseSize</button>
+                <button disabled={text.length === 0} className="btn btn-danger mx-1 my-1" onClick={handleDisableViewOnly}>Disable ViewOnly</button>
             </div>
-            <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
+            <div className="container my-3" style={{ color: props.mode === 'dark' ? '#2bdfd7' : 'rgb(43 123 223)' }}>
                 <h2>Your text summary</h2>
                 <p>{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} words and {text.length} characters</p>
                 <p>{0.008 * text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} Minutes read</p>

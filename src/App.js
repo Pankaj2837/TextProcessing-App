@@ -28,19 +28,19 @@ function App() {
   const toggleMode = ()=>{
     if(mode === 'light'){
       setMode('dark');
-      document.body.style.backgroundColor = '#042743';
+      document.body.style.backgroundColor = '#252b79';
       showAlert("Dark mode has been enabled", "success");
     }
     else{
       setMode('light');
-      document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundColor = '#cdf1ff';
       showAlert("Light mode has been enabled", "success");
     }
   }
   return (
     <>
     <Router>
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
+    <Navbar title="TextProcessor" mode={mode} toggleMode={toggleMode} key={new Date()} />
     <Alert alert={alert}/>
     <div className="container my-3">
     <Switch>
@@ -50,7 +50,7 @@ function App() {
             <About mode={mode} />
           </Route>
           <Route exact path="/">
-            <TextForm showAlert={showAlert} heading="Try TextProcessing App - word counter, character counter, remove extra spaces, increase and decrease size if text" mode={mode}/>
+            <TextForm showAlert={showAlert} heading="Try TextProcessing App - word counter, character counter, remove extra spaces, increase and decrease size of text" mode={mode}/>
           </Route>
     </Switch>
     </div>
