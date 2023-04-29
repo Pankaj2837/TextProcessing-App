@@ -52,6 +52,11 @@ export default function TextForm(props) {
         setView(true);
         props.showAlert("View mode is enabled", "success");
     };
+    const handleSpecialCharecter = () => {
+        let newText = text.replace(/[^a-zA-Z0-9 ]/g, '');
+        setText(newText);
+        props.showAlert("View mode is enabled", "success");
+    };
     const [text, setText] = useState('');
     const [size, setSize] = useState(20);
     const [view, setView] = useState(false);
@@ -73,6 +78,7 @@ export default function TextForm(props) {
                 <button disabled={text.length === 0} className="btn btn-warning mx-1 my-1" onClick={handleViewOnly}>ViewOnly</button>
                 <button disabled={text.length === 0} className="btn btn-info mx-1 my-1" onClick={handleDecressFontSize}>DecreseSize</button>
                 <button disabled={text.length === 0} className="btn btn-danger mx-1 my-1" onClick={handleDisableViewOnly}>Disable ViewOnly</button>
+                <button disabled={text.length === 0} className="btn btn-info mx-1 my-1" onClick={handleSpecialCharecter}>RemoveSpecialCharecter</button>
             </div>
             <div className="container my-3" style={{ color: props.mode === 'dark' ? '#2bdfd7' : 'rgb(43 123 223)' }}>
                 <h2>Your text summary</h2>
